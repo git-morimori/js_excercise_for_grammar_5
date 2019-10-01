@@ -5,12 +5,8 @@
 //     - 入力: 14, 期待する結果: false
 
 // ここにisOddNumber関数を作る
-function isOddNumber(i) {
-    if (i % 2 === 1) {
-        return true;
-    } else {
-        return false;
-    }
+function isOddNumber(number) {
+    return number % 2 === 1;
 }
 
 // ここにconsole.logを使って「9」「14」を引数に渡したときの結果値を出力する
@@ -28,9 +24,9 @@ console.log('14を入力したらfalseが返るべき:',isOddNumber(14));
 //     3. 【チャレンジ問題】再帰関数を使ったやり方(参考記事: https://qiita.com/chuck0523/items/2c40a5da90a1d73ab956)
 
 // ここにfactorial関数を作る
-const factorial = function(a) {
+const factorial = function(number) {
     let num = 1;
-    for (let i = 1; i <= a; i++) {
+    for (let i = 1; i <= number; i++) {
        num *= i;  
     }
     return num;
@@ -49,8 +45,7 @@ console.log('5を入力したら120が返るべき:',factorial(5));
 
 // ここにconvertFirstCharacterToUpperCase関数を作る
 const convertFirstCharacterToUpperCase = (word) => {
-    word = word.charAt(0).toUpperCase()+ word.slice(1);
-    return word;
+    return word.charAt(0).toUpperCase()+ word.slice(1);
 }
 
 // ここにconsole.logを使って「'hello'」「'world'」を引数に渡したときの結果値を出力する
